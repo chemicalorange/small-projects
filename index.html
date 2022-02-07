@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="contact">
+            <div class="container">
+                <div class="contact__left">
+                    <h1 class="title">Contact Us</h1>
+                    <p class="subtitle">We’re here to help answer any questions you may have. We look forward to hearing from you!
+                    </p>
+                    <form class="contact__form form">
+                        <div class="form__input-body">
+                            <input type="input" id="first-and-last-name" name="first-and-last-name" class="form__input">
+                            <label for="first-and-last-name">First and Last Name</label>
+                        </div>
+                        <div class="form__input-body">
+                            <input type="input" id="email" name="email" class="form__input">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form__input-body">
+                            <input type="input" id="phone-number" name="phone-number" class="form__input">
+                            <label for="phone-number">Phone Number</label>
+                        </div>
+                        <div class="form__input-body">
+                            <input type="input" id="company" name="company-place-name" class="form__input">
+                            <label for="company">Company/Place Name</label>
+                        </div>
+                        <div class="form__input-body">
+                            <input type="input" id="index" name="index" class="form__input">
+                            <label for="index">Index</label>
+                        </div>
+                        <div class="form__select">
+                            <h4 class="form__select-title">Какой тип заведения?</h4>
+                            <div class="form__select-body">
+                                <input type="radio" name="type" class="form__select-item" id="restaurant" value="Ресторан" checked>
+                                <label for="restaurant">Ресторан</label>
+                                <input type="radio" name="type" class="form__select-item" id="other-type-1" value="other-type-1">
+                                <label for="other-type-1">Other type</label>
+                                <input type="radio" name="type" class="form__select-item" id="other-type-2" value="other-type-2">
+                                <label for="other-type-2">Other type</label>
+                                <input type="radio" name="type" class="form__select-item" id="other-type-3" value="other-type-3">
+                                <label for="other-type-3">Other type</label>
+                            </div>
+                        </div>
+                        <div class="form__select">
+                            <h4 class="form__select-title">Какое количество терминалов нужно?</h4>
+                            <div class="form__select-body">
+                                <input type="radio" name="quantity" class="form__select-item" id="one" value="1" checked>
+                                <label for="one">1</label>
+                                <input type="radio" name="quantity" class="form__select-item" id="two-three" value="2-3">
+                                <label for="two-three">2-3</label>
+                                <input type="radio" name="quantity" class="form__select-item" id="four-plus" value="4+">
+                                <label for="four-plus">4+</label>
+                            </div>
+                        </div>
+                        <button class="form__btn" type="submit">
+                            Submit
+                        </button>
+                    </form>
+                    <p class="contact__privacy">By requesting a demo, you agree to receive automated text messages from Toast. We’ll handle your info according to our <a href="#">privacy statement.</a>
+                    </p>
+                </div>
+                <div class="contact__right">
+                    <div class="contact__img">
+                        <img src="src/img/form-image.png" alt="form-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
