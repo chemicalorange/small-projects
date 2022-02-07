@@ -93,12 +93,17 @@ body {
   outline: solid 1px transparent;
 }
 
+.contact .form__input.error {
+  border: 1px solid #EF2B23;
+  outline: 1px solid #EF2B23;
+}
+
 .contact .form__input:focus {
   outline: 1px solid #0066CC;
   border: 1px solid #0066CC;
 }
 
-.contact .form__input:focus + label {
+.contact .form__input:focus + label, .contact .form label.has-value {
   font-size: 10px;
   top: 2px;
 }

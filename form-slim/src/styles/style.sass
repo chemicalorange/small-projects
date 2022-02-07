@@ -73,11 +73,15 @@ body
            width: 100%
            outline: solid 1px transparent
 
+        &__input.error
+            border: 1px solid $red
+            outline: 1px solid $red
+
         &__input:focus
             outline: 1px solid $blue
             border: 1px solid $blue
 
-        &__input:focus + label
+        &__input:focus + label, label.has-value
             font-size: 10px
             top: 2px
 
