@@ -1,0 +1,133 @@
+* 
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    outline: none
+
+$black : #0C0C0C
+$blue : #0066CC
+$red : #EF2B23
+$grey : #919191
+$font : Roboto
+
+body
+    font-family: $font
+    font-size: 16px
+    color: $black
+
+.container
+    padding: 10px
+    width: 100%
+    margin: 0 auto
+    display: flex
+
+.title
+    font-weight: bold
+    font-size: 50px
+    margin-bottom: 25px
+
+.subtitle
+    max-width: 381px
+    font-weight: normal
+    font-size: 16px
+    line-height: 29px
+    margin-bottom: 25px
+
+@media screen and (min-width:1150px) 
+    .container
+        max-width: 1150px
+        padding: 0    
+
+.contact
+    padding-top: 30px
+
+    .container
+        justify-content: space-between
+
+    &__right
+        align-self: flex-end
+
+    .form
+        display: flex
+        flex-direction: column
+        max-width: 476px
+        gap: 25px
+
+        &__input-body
+                width: 100%
+                position: relative
+
+                label
+                    position: absolute
+                    top: 10px
+                    left: 10px
+                    color: $grey
+                    transition: all 0.3s ease
+
+        &__input
+           padding: 12px 10px 8px 10px
+           border-radius: 8px
+           border: 1px solid $grey
+           font-size: 14px
+           font-family: $font
+           width: 100%
+           outline: solid 1px transparent
+
+        &__input:focus
+            outline: 1px solid $blue
+            border: 1px solid $blue
+
+        &__input:focus + label
+            font-size: 10px
+            top: 2px
+
+        &__select
+            &-body
+                padding: 3px
+                background: #F6F7F9
+                border-radius: 8px
+                display: flex
+                justify-content: space-between
+
+            &-title
+                font-weight: normal
+                font-size: 16px
+                margin-bottom: 12px
+
+            label
+                padding: 11px 15px
+                display: block
+                color: $blue
+                transition: background 0.3s ease
+                border-radius: 8px
+                cursor: pointer
+                width: 100%
+                text-align: center
+
+            &-item:checked + label
+                background: white
+                box-shadow: 0px 1px 2px rgba(76, 94, 134, 0.3), 0px 1px 4px rgba(163, 174, 193, 0.3), 0px 1px 2px rgba(163, 174, 193, 0.15)
+            
+            &-item
+                position: absolute
+                visibility: hidden
+
+        &__btn
+            background: $red
+            color: white
+            font-family: $font
+            border: none
+            padding: 16px 32px
+            align-self: flex-start
+            border-radius: 8px
+            cursor: pointer
+            font-weight: bold
+    
+    &__privacy
+        color: $grey
+        line-height: 29px
+        margin-top: 24px
+
+        a
+            text-decoration: none
+            color: $blue
