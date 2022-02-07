@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="calc">
+            <div class="container">
+                <div class="calc__content">
+                    <h1 class="title">
+                        Узнайте точную стоимость <span>катализатора</span> 
+                    </h1>
+                    <h3 class="subtitle">
+                        Сдать старый катализатор дорого можно в Katprofi Recycle. Мы занимается приемом катализаторов как от физических, так и от юридических лиц.
+                    </h3>    
+                </div>
+                <form class="calc__form form" method="POST" action="">
+                    <div class="form__type">
+                        <div class="form__type-item">
+                            <input type="radio" name="type" id="inBottle" value="В банке" checked>
+                            <label for="inBottle">
+                                <div class="form__type-img">
+                                    <img src="src/img/calc1.png" alt="calc1">
+                                </div>
+                                <h4 class="form__type-title">В банке</h4>
+                            </label>
+                        </div>
+                        <div class="form__type-item">
+                            <input type="radio" name="type" id="embossed" value="Выбитый">
+                            <label for="embossed">
+                                <div class="form__type-img">
+                                    <img src="src/img/calc2.png" alt="calc2">
+                                </div>
+                                <h4 class="form__type-title">Выбитый</h4>
+                            </label>
+                        </div>
+                        <div class="form__type-item">
+                            <input type="radio" name="type" id="broken" value="Лом">
+                            <label for="broken">
+                                <div class="form__type-img">
+                                    <img src="src/img/calc3.png" alt="calc3">
+                                </div>
+                                <h4 class="form__type-title">Лом</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__controls">
+                        <div class="form__controls-item">
+                            <label for="pt">Pt</label>
+                            <div class="form__range">
+                            <div class="progress"><div class="progress__value">18 г/кг</div></div>   
+                            <input type="range" name="pt" id="pt" value="12" min="0" max="18" step="0.2"></input>
+                            </div>   
+                        </div>
+                        <div class="form__controls-item">
+                            <label for="pt">Pd</label>
+                            <div class="form__range">
+                            <div class="progress"><div class="progress__value">18 г/кг</div></div>   
+                            <input type="range" name="pd" id="pd" value="18" min="0" max="18" step="0.2"></input>
+                            </div> 
+                        </div>
+                        <div class="form__controls-item">
+                            <label for="ph">Ph</label>
+                            <div class="form__range">
+                            <div class="progress"><div class="progress__value">18 г/кг</div></div>   
+                            <input type="range" name="ph" id="ph" value="4.8" min="0" max="18" step="0.2"></input>
+                            </div> 
+                        </div>
+                        <div class="form__controls-item form__controls-item_radios">
+                            <div class="form__controls-radio">
+                                <input type="radio" name="kind" id="metal" value="Металический автокатализатор" checked>
+                                <label for="metal">Металический автокатализатор</label>
+                            </div>
+                            <div class="form__controls-radio">
+                                <input type="radio" name="kind" id="ceramic" value="Керамический автокатализатор">
+                                <label for="ceramic">Керамический автокатализатор</label>
+                            </div>
+                            <div class="form__controls-radio">
+                                <input type="radio" name="kind" id="soot" value="Сажевый фильтр">
+                                <label for="soot">Сажевый фильтр</label>
+                            </div>
+                        </div>
+                        <div class="form__controls-item form__controls-item_inomarka">
+                            <h4 class="form__controls-title">
+                                Иномарка
+                            </h4>
+                            <div class="form__controls-radio form__controls-radio_fork">
+                                <label for="inomarka-yes">Да</label>
+                                <div class="form__fork">
+                                    <label for="inomarka-yes"></label>
+                                    <label for="inomarka-no"></label>
+                                </div>
+                                <input type="radio" name="inomarka" id="inomarka-yes" value="Да" checked>
+                                <input type="radio" name="inomarka" id="inomarka-no" value="Нет">
+                                <label for="inomarka-no">Нет</label>
+                            </div>
+                        </div>
+                        <button class="form__btn" type="submit">Узнать цену катализатора</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="src/scripts/calculator.js"></script>
+</body>
+</html>

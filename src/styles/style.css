@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+.container {
+  padding: 0 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 1110px) {
+  .container {
+    max-width: 1110px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.calc {
+  padding-top: 40px;
+}
+
+.calc .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.calc__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calc .title {
+  font-size: 36px;
+  max-width: 445px;
+  font-weight: 500;
+  line-height: 125%;
+  margin-bottom: 40px;
+  color: #F7971E;
+}
+
+.calc .title span {
+  color: #1E1E1E;
+}
+
+.calc .subtitle {
+  font-size: 14px;
+  font-weight: normal;
+  color: #1E1E1E;
+  opacity: 0.8;
+  max-width: 635px;
+  margin-top: 10px;
+}
+
+.calc__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calc .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calc .form__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.calc .form__type-img {
+  width: 84px;
+  height: 78px;
+  position: relative;
+}
+
+.calc .form__type-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.calc .form__type-title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.calc .form__type label {
+  padding: 30px 12px;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: inline-block;
+  border: 2px solid transparent;
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
+  width: 128px;
+}
+
+.calc .form__type input:checked + label {
+  border: 2px solid #F7971E;
+}
+
+.calc .form__type input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.calc .form__controls {
+  width: 100%;
+  max-width: 635px;
+}
+
+.calc .form__controls-item {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.calc .form__controls label {
+  width: 28px;
+}
+
+.calc .form__controls .form__controls-item_radios {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 453px;
+}
+
+.calc .form__controls .form__controls-item_radios label {
+  font-size: 14px;
+}
+
+.calc .form__controls .form__controls-item_radios .form__controls-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.calc .form__controls .form__controls-item_radios .form__controls-radio input[type='radio'] {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.calc .form__controls .form__controls-item_radios .form__controls-radio input[type='radio']::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #F7971E;
+}
+
+.calc .form__controls .form__controls-item_radios .form__controls-radio input[type='radio']:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #F7971E;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: visible;
+}
+
+.calc .form label, .calc .form .form__controls-title {
+  color: #1E1E1E;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.calc .form input[type="range"] {
+  width: 100%;
+  max-width: 439px;
+  border-radius: 40px;
+}
+
+.calc .form input[type=range] {
+  -webkit-appearance: none;
+  display: inline;
+}
+
+.calc .form__range {
+  width: 100%;
+  max-width: 439px;
+  position: relative;
+  height: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.calc .form .progress {
+  width: 100px;
+  min-width: 90px;
+  height: 2px;
+  background: #F7971E;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.calc .form .progress__value {
+  position: absolute;
+  right: 0;
+  top: -15px;
+  width: 90px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#F7971E), to(#FFD200));
+  background: linear-gradient(90deg, #F7971E 0%, #FFD200 100%);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 6px 12px;
+  color: #fff;
+  font-size: 16px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.calc .form input[type=range]::-webkit-slider-runnable-track {
+  height: 2px;
+  background: #717784;
+  opacity: 0.2;
+  border: none;
+  border-radius: 40px;
+}
+
+.calc .form input[type='range']::-webkit-slider-thumb {
+  width: 60px;
+  -webkit-appearance: none;
+  height: 20px;
+  position: relative;
+  -webkit-transform: translateY(-10px) translateX(-10px);
+          transform: translateY(-10px) translateX(-10px);
+  cursor: ew-resize;
+  background: transparent;
+}
+
+.calc .form .form__controls-radio_fork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calc .form .form__controls-radio_fork input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.calc .form .form__controls-item_inomarka {
+  width: 100%;
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calc .form .form__fork {
+  width: 50px;
+  height: 25px;
+  background: #7177842d;
+  border-radius: 100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 21px;
+}
+
+.calc .form .form__fork::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#F7971E), to(#FFD200));
+  background: linear-gradient(90deg, #F7971E 0%, #FFD200 100%);
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.calc .form .form__fork.no::before {
+  left: 25px;
+}
+
+.calc .form .form__fork label {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+.calc .form__btn {
+  background: -webkit-gradient(linear, left top, right top, from(#F7971E), to(#FFD200));
+  background: linear-gradient(90deg, #F7971E 0%, #FFD200 100%);
+  border-radius: 4px;
+  font-family: Montserrat;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 18px 40px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .calc .form__controls, .calc .subtitle {
+    max-width: 530px;
+  }
+}
+
+@media screen and (max-width: 1029px) {
+  .calc__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .calc .title {
+    margin-bottom: 15px;
+    max-width: 400px;
+    font-size: 30px;
+  }
+  .calc .subtitle {
+    margin-bottom: 40px;
+    font-size: 13px;
+  }
+  .calc__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .calc .form__btn {
+    font-size: 14px;
+  }
+  .calc label, .calc .form__controls-title, .calc h4 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .calc .title {
+    font-size: 26px;
+  }
+  .calc .subtitle {
+    margin-bottom: 40px;
+    max-width: none;
+  }
+  .calc .form__type {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .calc .form__type-item {
+    width: 100%;
+  }
+  .calc .form__type-item label {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .calc .form__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .calc .form__btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .calc label, .calc .form__controls-title, .calc h4 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .calc .title {
+    font-size: 24px;
+  }
+  .calc .form__type {
+    gap: 8px;
+  }
+  .calc .form__type-img {
+    width: 54px;
+    height: 55px;
+  }
+  .calc .form__type-title {
+    white-space: nowrap;
+  }
+  .calc .form__controls .form__controls-item_radios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .calc .form__controls .form__controls-item_radios label {
+    width: auto;
+  }
+  .calc .form__btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .calc label, .calc .form__controls-title, .calc h4 {
+    font-size: 16px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
