@@ -1,0 +1,218 @@
+.container
+	max-width: 1160px
+	width: 100%
+	display: flex
+	margin: 0 auto
+
+
+.main
+	margin-bottom: 190px
+	padding-top: 120px
+	.container
+		max-width: 1160px
+		align-items: center
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			bottom: -80px
+			left: -150px
+			width: 1812px
+			height: 712px
+			display: block
+			z-index: -1	
+			background: #F6F7F9
+			border-radius: 50px
+			transform: rotateZ(-6.93deg)
+	&-screen
+		position: relative
+		img
+			position: absolute
+			top: -92px
+			left: -35px
+			transform: rotateZ(120deg)
+	&-info
+		max-width: 400px
+		margin-left: 60px
+		margin-right: 184px
+		p
+			font-weight: normal
+			font-size: 21px
+			line-height: 34px
+			color: #0C0C0C
+		&__buttons
+			display: flex
+			margin-top: 32px
+			.btn
+				margin-right: 24px
+				&:last-child
+					margin-right: 0px
+
+.coop
+	margin-bottom: 100px
+	.container
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+	&-logo
+		height: 35px
+		width: auto
+
+.why
+	.container
+	&-block
+		&__img
+			position: relative
+			min-width: 530px
+			height: 420px
+			margin-right: 50px
+			img
+				position: absolute
+				width: 100%
+				&:first-child
+					height: auto
+					right: 0
+					z-index: 3
+				&:nth-child(2)
+					z-index: 2
+					top: 10%
+					left: 0
+				&:last-child
+					z-index: 1
+					left: 0
+					top: 30%
+					
+					
+		&__list
+			position: relative
+			.section-title
+				margin-bottom: 75px
+			ul
+				li	
+					padding-left: 69px
+					position: relative
+					transition: all 0.5s ease
+					&:hover
+						padding-left: 159px
+						.why
+							&-list
+								&__title
+									color: #0C0C0C
+								&__descr
+									color: #0C0C0C
+									height: auto
+						span
+							transition: all 0.5s ease
+							left: 16px
+							div
+								&::after
+									width: 57px
+									height: 57px
+								&::before
+									width: 80px
+					span
+						position: absolute
+						left: -0
+						top: 16px
+						transition: all 0.5s ease
+
+						div
+							position: relative
+							display: block
+							left: 0
+							top: 0
+							width: 25px
+							height: 25px
+							border-radius: 100%
+							background: #F46B65
+							transition: all 0.5s ease
+							&::before
+								position: absolute
+								content: ''
+								width: 0
+								height: 3px
+								top: 50%
+								left: 52px
+								transform: translateY(-50%)
+								background: #F46B65
+								transition: all 0.5s ease
+
+							&::after
+								position: absolute
+								content: ''
+								top: 50%
+								left: 50%
+								z-index: -1
+								transform: translate(-50%, -50%)
+								width: 25px
+								height: 25px
+								border-radius: 100%
+								background: #FABFBD
+								z-index: -1
+								transition: all 0.5s ease
+
+
+	&-list
+		&__title
+			font-weight: bold
+			font-size: 18px
+			line-height: 23px
+			margin-bottom: 10px
+			color: #919191
+		&__descr
+			font-weight: normal
+			font-size: 16px
+			line-height: 29px
+			color: #919191
+			height: 29px
+			overflow: hidden
+			transition: all 0.5s ease
+			max-width: 240px
+
+
+
+
+
+
+.faq
+	.container
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
