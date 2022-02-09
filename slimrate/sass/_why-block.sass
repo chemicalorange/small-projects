@@ -1,28 +1,29 @@
 .why
     .why-block__img
+        transform: translateY(40px)
         img
-            transition: transform 0.5s ease
+            transition: transform 0.9s ease
 
         &.animation-st-1
             img:nth-child(1)
                 transform: translateY(-20px) scale(1.1)
 
             img:nth-child(2), img:nth-child(3)
-                transform: translateY(40px)
+                transform: translateY(60px)
 
         &.animation-st-2
             img:nth-child(1)
-                transform: translateY(-40px)
+                transform: translateY(-50px)
 
             img:nth-child(2)
                 transform: scale(1.1)
 
             img:nth-child(3)
-                transform: translateY(40px)
+                transform: translateY(50px)
 
         &.animation-st-3
             img:nth-child(1), img:nth-child(2)
                 transform: translateY(-40px)
 
             img:nth-child(3)
-                transform: translateY(40px) scale(1.1)
+                transform: translateY(60px) scale(1.1)
