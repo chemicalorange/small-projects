@@ -4,7 +4,6 @@
 	display: flex
 	margin: 0 auto
 
-
 .main
 	margin-bottom: 190px
 	padding-top: 120px
@@ -20,7 +19,7 @@
 			width: 1812px
 			height: 712px
 			display: block
-			z-index: -1	
+			z-index: -1
 			background: #F6F7F9
 			border-radius: 50px
 			transform: rotateZ(-6.93deg)
@@ -81,91 +80,95 @@
 					z-index: 1
 					left: 0
 					top: 30%
-					
-					
+
 		&__list
-			position: relative
-			.section-title
-				margin-bottom: 75px
-			ul
-				li	
-					padding-left: 69px
-					position: relative
-					transition: all 0.5s ease
-					cursor: default
-					&.unactive
-						opacity: 0.3
-					&:not(:first-child)
-						margin-top: 30px
-					&:hover
-						padding-left: 159px
-						
-						&:first-child
-							margin: 0 0 70px 0
-						
-						&:nth-child(2)
-							margin: 70px 0 70px 0
 
-						&:last-child
-							margin: 70px 0 0 0
-						.why
-							&-list
-								&__title
-									color: #0C0C0C
-								&__descr
-									color: #0C0C0C
-									animation: descr-anim 0.8s linear
-						span
-							transition: all 0.5s ease
-							left: 16px
-							div
-								&::after
-									width: 57px
-									height: 57px
-								&::before
-									width: 80px
+			li
+				padding-left: 60px
+				transition: all ease 0.3s
+				&.unactive
+					opacity: 0.3
+				&:not(:first-child)
+					margin-top: 30px
+
+				&:hover
+					&:first-child
+						padding: 0 0 70px 60px
+
+					&:nth-child(2)
+						padding: 70px 0 70px 60px
+
+					&:last-child
+						padding: 70px 0 0 60px
+
+					.why
+						&-list
+							&__title
+								color: #0c0707
+							&__descr
+								color: #0C0C0C
+								height: auto
+								animation: descr-anim 0.8s linear
+
+			&-item
+				position: relative
+				transition: all 0.5s ease
+				cursor: default
+				padding-left: 70px
+				&:hover
 					span
-						position: absolute
-						left: -0
-						top: 16px
 						transition: all 0.5s ease
-
+						left: -86px
 						div
-							position: relative
-							display: block
-							left: 0
-							top: 0
+							&::after
+								width: 57px
+								height: 57px
+							&::before
+								width: 80px
+				span
+					position: absolute
+					left: 0
+					top: 40px
+					transform: translateY(-25px)
+					transition: all 0.5s ease
+
+					.round
+						position: relative
+						display: block
+						left: 0
+						top: 0
+						width: 25px
+						height: 25px
+						border-radius: 100%
+						background: #F46B65
+						transition: all 0.5s ease
+						&::before
+							position: absolute
+							content: ''
+							width: 0
+							height: 3px
+							top: 50%
+							left: 52px
+							transform: translateY(-50%)
+							background: #F46B65
+							transition: all 0.5s ease
+
+						&::after
+							position: absolute
+							content: ''
+							top: 50%
+							left: 50%
+							z-index: -1
+							transform: translate(-50%, -50%)
 							width: 25px
 							height: 25px
 							border-radius: 100%
-							background: #F46B65
+							background: #FABFBD
+							z-index: -1
 							transition: all 0.5s ease
-							&::before
-								position: absolute
-								content: ''
-								width: 0
-								height: 3px
-								top: 50%
-								left: 52px
-								transform: translateY(-50%)
-								background: #F46B65
-								transition: all 0.5s ease
 
-							&::after
-								position: absolute
-								content: ''
-								top: 50%
-								left: 50%
-								z-index: -1
-								transform: translate(-50%, -50%)
-								width: 25px
-								height: 25px
-								border-radius: 100%
-								background: #FABFBD
-								z-index: -1
-								transition: all 0.5s ease
-
-
+			.section-title
+				margin-bottom: 75px
 	&-list
 		&__title
 			font-weight: bold
@@ -183,59 +186,15 @@
 			transition: all 0.5s ease
 			max-width: 240px
 
-
-
-@keyframes descr-anim 
+@keyframes descr-anim
 	0%
 		opacity: 0
-	
-	50%
-		
-		height: auto
-	
-	100% 
-		opacity: 1
 
+	50%
+		height: auto
+
+	100%
+		opacity: 1
 
 .faq
 	.container
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
